@@ -31,3 +31,6 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+safe-test/node_modules
+safe-test/dist
