@@ -2,6 +2,8 @@ module Nav
 
 open Feliz
 
+//type NavPage = Home | SignIn | SignUp
+
 let nav = Html.nav [
     prop.classes ["navbar"; "navbar-light"]
     prop.children [
@@ -20,8 +22,8 @@ let nav = Html.nav [
                             prop.classes ["nav-item"]
                             prop.children [
                                 Html.a [
-                                   prop.classes ["nav-link"; "active"]
-                                   prop.href ""
+                                   prop.classes ["nav-link"; "active"]//(if page == Home then ["nav-link"; "active"] else ["nav-link"])
+                                   prop.href "/#/"
                                    prop.text "Home"
                                 ]
                             ]
@@ -31,7 +33,7 @@ let nav = Html.nav [
                             prop.children [
                                 Html.a [
                                    prop.classes ["nav-link"]
-                                   prop.href ""
+                                   prop.href "/#/login"
                                    prop.text "Sign in"
                                 ]
                             ]
@@ -41,7 +43,7 @@ let nav = Html.nav [
                             prop.children [
                                 Html.a [
                                    prop.classes ["nav-link"]
-                                   prop.href ""
+                                   prop.href "/#/register"
                                    prop.text "Sign up"
                                 ]
                             ]
